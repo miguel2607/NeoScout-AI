@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoScout AI — Inteligencia de scouting futbolístico</title>
+  <meta name="description" content="NeoScout AI: plataforma futurista de análisis de fútbol con inteligencia artificial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__brand" href="#inicio">
+        <span class="nav__logo" aria-hidden="true"></span>
+        <span class="nav__title">NeoScout <span class="nav__ai">AI</span></span>
+      </a>
+
+      <button type="button" class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <div class="nav__panel" id="nav-menu">
+        <ul class="nav__links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#jugadores">Jugadores</a></li>
+          <li><a href="#estadisticas">Estadísticas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav__cta" href="#contacto">Solicitar Demo</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__copy" data-reveal>
+          <p class="eyebrow">Plataforma de scouting con IA</p>
+          <h1 id="hero-title" class="hero__title">NeoScout AI</h1>
+          <p class="hero__subtitle">
+            Modelos predictivos, perfiles tácticos y señales en tiempo real. La próxima generación de análisis futbolístico, diseñada para directores deportivos y analistas de élite.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#jugadores">Explorar jugadores</a>
+            <a class="btn btn--ghost" href="#estadisticas">Ver estadísticas</a>
+          </div>
+        </div>
+        <div class="hero__visual" data-reveal>
+          <div class="mockup" role="img" aria-label="Vista previa de panel analítico futurista">
+            <header class="mockup__top">
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__title">Live Scout · NeoCore</span>
+            </header>
+            <div class="mockup__body">
+              <div class="mockup__sidebar">
+                <span class="mockup__pill mockup__pill--active"></span>
+                <span class="mockup__pill"></span>
+                <span class="mockup__pill"></span>
+                <span class="mockup__pill"></span>
+              </div>
+              <div class="mockup__main">
+                <div class="mockup__row">
+                  <span class="mockup__chip">xG Δ +0.42</span>
+                  <span class="mockup__chip mockup__chip--blue">Pressing 92</span>
+                </div>
+                <div class="mockup__chart">
+                  <div class="mockup__bar" style="--h: 45%"></div>
+                  <div class="mockup__bar" style="--h: 72%"></div>
+                  <div class="mockup__bar" style="--h: 58%"></div>
+                  <div class="mockup__bar" style="--h: 88%"></div>
+                  <div class="mockup__bar" style="--h: 64%"></div>
+                  <div class="mockup__bar" style="--h: 91%"></div>
+                </div>
+                <div class="mockup__grid">
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section" id="estadisticas" aria-labelledby="stats-heading">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 id="stats-heading" class="section__title">Métricas que importan</h2>
+          <p class="section__lead">Confianza medible en cada informe. Datos limpios, visualizaciones claras y una capa de IA lista para escalar con tu club.</p>
+        </header>
+        <div class="stats__grid">
+          <article class="stat-card" data-reveal>
+            <div class="stat-card__icon" aria-hidden="true">
+              <img src="assets/icons/icon-players.svg" alt="" width="28" height="28">
+            </div>
+            <h3 class="stat-card__label">Jugadores analizados</h3>
+            <p class="stat-card__value">15K<span class="stat-card__suffix">+</span></p>
+            <p class="stat-card__hint">Base global actualizada semanalmente</p>
+          </article>
+          <article class="stat-card" data-reveal>
+            <div class="stat-card__icon" aria-hidden="true">
+              <img src="assets/icons/icon-precision.svg" alt="" width="28" height="28">
+            </div>
+            <h3 class="stat-card__label">Precisión IA</h3>
+            <p class="stat-card__value">98<span class="stat-card__suffix">%</span></p>
+            <p class="stat-card__hint">Modelos calibrados con partidos de alto nivel</p>
+          </article>
+          <article class="stat-card" data-reveal>
+            <div class="stat-card__icon" aria-hidden="true">
+              <img src="assets/icons/icon-clubs.svg" alt="" width="28" height="28">
+            </div>
+            <h3 class="stat-card__label">Clubes asociados</h3>
+            <p class="stat-card__value">120</p>
+            <p class="stat-card__hint">Red privada de intercambio de perfiles</p>
+          </article>
+          <article class="stat-card" data-reveal>
+            <div class="stat-card__icon" aria-hidden="true">
+              <img src="assets/icons/icon-radar.svg" alt="" width="28" height="28">
+            </div>
+            <h3 class="stat-card__label">Scouting continuo</h3>
+            <p class="stat-card__value">24<span class="stat-card__suffix">/7</span></p>
+            <p class="stat-card__hint">Alertas y briefings automáticos</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog section" id="jugadores" aria-labelledby="catalog-heading">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 id="catalog-heading" class="section__title">Catálogo en vivo</h2>
+          <p class="section__lead">Tarjetas de jugador con estética de consola deportiva. Los datos se conectarán después; hoy es puro diseño de producto.</p>
+        </header>
+        <div class="catalog__grid">
+          <!-- Fotos jugadores: pega en <img src="..."> la URL directa de la imagen (clic derecho en Google Imágenes → "Copiar dirección de la imagen"). Quita la clase player-card__img--google para que la foto llene la tarjeta. El enlace al hacer clic va en <a href="...">. -->
+          <article class="player-card" data-reveal>
+            <figure class="player-card__media">
+              <a class="player-card__img-link" href="https://www.google.com/search?q=%C3%81lex+Varela+futbolista" target="_blank" rel="noopener noreferrer" aria-label="Buscar Álex Varela en Google">
+                <img src="https://www.pngarts.com/files/18/Kylian-Mbappe-Transparent-Images.png" alt="" width="320" height="200" decoding="async" referrerpolicy="no-referrer-when-downgrade">
+              </a>
+            </figure>
+            <div class="player-card__body">
+              <h3 class="player-card__name">Kylian Mbappé</h3>
+              <p class="player-card__role">Delantero</p>
+              <div class="player-card__meta">
+                <span class="badge badge--rating">OVR <strong>98</strong></span>
+                <span class="badge badge--price">€200M</span>
+              </div>
+            </div>
+          </article>
+          <article class="player-card" data-reveal>
+            <figure class="player-card__media">
+              <a class="player-card__img-link" href="https://www.google.com/search?q=Noa+Serrano+futbolista" target="_blank" rel="noopener noreferrer" aria-label="Buscar Noa Serrano en Google">
+                <img src="https://www.fcbarcelona.com/photo-resources/2025/09/09/3dd2346c-01bb-4ad9-9b62-ed5cbf8d8b06/08-Pedri.png?width=670&height=790" alt="" width="320" height="200" decoding="async" referrerpolicy="no-referrer-when-downgrade">
+              </a>
+            </figure>
+            <div class="player-card__body">
+              <h3 class="player-card__name">Pedri Gonzalez</h3>
+              <p class="player-card__role">Centrocampista</p>
+              <div class="player-card__meta">
+                <span class="badge badge--rating">OVR <strong>99</strong></span>
+                <span class="badge badge--price">€250M</span>
+              </div>
+            </div>
+          </article>
+          <article class="player-card" data-reveal>
+            <figure class="player-card__media">
+              <a class="player-card__img-link" href="https://www.google.com/search?q=Marin+Okonkwo+futbolista" target="_blank" rel="noopener noreferrer" aria-label="Buscar Marin Okonkwo en Google">
+                <img src="https://www.pngarts.com/files/2/Cristiano-Ronaldo-Download-PNG-Image.png" alt="" width="320" height="300"  decoding="async" referrerpolicy="no-referrer-when-downgrade">
+              </a>
+            </figure>
+            <div class="player-card__body">
+              <h3 class="player-card__name">Cristiano Ronaldo</h3>
+              <p class="player-card__role">Delantero Centro</p>
+              <div class="player-card__meta">
+                <span class="badge badge--rating">OVR <strong>90</strong></span>
+                <span class="badge badge--price">€100M</span>
+              </div>
+            </div>
+          </article>
+          <article class="player-card" data-reveal>
+            <figure class="player-card__media">
+              <a class="player-card__img-link" href="https://www.google.com/search?q=Iria+Costa+futbolista" target="_blank" rel="noopener noreferrer" aria-label="Buscar Iria Costa en Google">
+                <img src="https://www.pngarts.com/files/5/Footballer-Lionel-Messi-Transparent-Image.png" alt="" width="320" height="200" decoding="async" referrerpolicy="no-referrer-when-downgrade">
+              </a>
+            </figure>
+            <div class="player-card__body">
+              <h3 class="player-card__name">Iria Costa</h3>
+              <p class="player-card__role">Portera · Reflejos +91</p>
+              <div class="player-card__meta">
+                <span class="badge badge--rating">OVR <strong>87</strong></span>
+                <span class="badge badge--price">€28M</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard section" id="analitica" aria-labelledby="dashboard-heading">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 id="dashboard-heading" class="section__title">Dashboard preview</h2>
+          <p class="section__lead">Gráficas decorativas y layout tipo analytics. Números ilustrativos para transmitir densidad de producto.</p>
+        </header>
+
+        <div class="dashboard__layout" data-reveal>
+          <article class="dash-card dash-card--span-full">
+            <header class="dash-card__top">
+              <div class="dash-card__intro">
+                <h3 class="dash-card__title">Rendimiento ofensivo</h3>
+                <p class="dash-card__subtitle">Últimas 12 jornadas · liga top · modelo NeoScout v3</p>
+              </div>
+              <ul class="dash-mini-stats" aria-label="Resumen ofensivo">
+                <li class="dash-mini-stats__item">
+                  <span class="dash-mini-stats__lab">xG total</span>
+                  <strong class="dash-mini-stats__val">18.4</strong>
+                  <span class="dash-mini-stats__delta dash-mini-stats__delta--up">+2.1 vs prev.</span>
+                </li>
+                <li class="dash-mini-stats__item">
+                  <span class="dash-mini-stats__lab">Goles</span>
+                  <strong class="dash-mini-stats__val">22</strong>
+                  <span class="dash-mini-stats__delta">vs 19.8 npxG</span>
+                </li>
+                <li class="dash-mini-stats__item">
+                  <span class="dash-mini-stats__lab">xA / 90</span>
+                  <strong class="dash-mini-stats__val">0.34</strong>
+                  <span class="dash-mini-stats__delta dash-mini-stats__delta--up">P88 ligas top</span>
+                </li>
+                <li class="dash-mini-stats__item">
+                  <span class="dash-mini-stats__lab">Conv. zona</span>
+                  <strong class="dash-mini-stats__val">41%</strong>
+                  <span class="dash-mini-stats__delta">media liga 33%</span>
+                </li>
+              </ul>
+            </header>
+            <div class="bar-chart" role="presentation">
+              <div class="bar-chart__item">
+                <span class="bar-chart__val">2.84</span>
+                <div class="bar-chart__col"><span class="bar-chart__bar" style="--v: 62%"></span></div>
+                <span class="bar-chart__lab">xG</span>
+              </div>
+              <div class="bar-chart__item">
+                <span class="bar-chart__val">4.1</span>
+                <div class="bar-chart__col"><span class="bar-chart__bar" style="--v: 88%"></span></div>
+                <span class="bar-chart__lab">ShT</span>
+              </div>
+              <div class="bar-chart__item">
+                <span class="bar-chart__val">2.6</span>
+                <div class="bar-chart__col"><span class="bar-chart__bar" style="--v: 54%"></span></div>
+                <span class="bar-chart__lab">KP</span>
+              </div>
+              <div class="bar-chart__item">
+                <span class="bar-chart__val">8.9</span>
+                <div class="bar-chart__col"><span class="bar-chart__bar" style="--v: 76%"></span></div>
+                <span class="bar-chart__lab">Prg</span>
+              </div>
+              <div class="bar-chart__item">
+                <span class="bar-chart__val">19%</span>
+                <div class="bar-chart__col"><span class="bar-chart__bar" style="--v: 94%"></span></div>
+                <span class="bar-chart__lab">Fin</span>
+              </div>
+            </div>
+            <p class="dash-card__insight"><strong>Insight IA:</strong> picos de xG en transiciones (min 61–78); remates cerca del segundo palo +0.34 xG vs bloque medio-bajo.</p>
+          </article>
+
+          <article class="dash-card">
+            <h3 class="dash-card__title">Radar de rol</h3>
+            <p class="dash-card__subtitle">Perfil sintético</p>
+            <div class="radar" role="img" aria-label="Gráfico radar decorativo de atributos">
+              <svg class="radar__svg" viewBox="0 0 200 200" aria-hidden="true">
+                <polygon class="radar__grid" points="100,20 160,55 160,125 100,160 40,125 40,55"/>
+                <polygon class="radar__grid radar__grid--inner" points="100,45 140,70 140,110 100,135 60,110 60,70"/>
+                <polygon class="radar__shape" points="100,35 150,72 138,118 100,142 52,108 58,68"/>
+              </svg>
+              <ul class="radar__legend">
+                <li><span class="dot dot--neon"></span> Actual</li>
+                <li><span class="dot dot--blue"></span> Benchmark</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="dash-card">
+            <h3 class="dash-card__title">Carga física</h3>
+            <p class="dash-card__subtitle">Sesión vs media equipo</p>
+            <div class="mini-bars">
+              <div class="mini-bars__row"><span>HSR</span><span class="mini-bars__track"><i style="--w: 78%"></i></span><span>78</span></div>
+              <div class="mini-bars__row"><span>Sprint</span><span class="mini-bars__track"><i style="--w: 64%"></i></span><span>64</span></div>
+              <div class="mini-bars__row"><span>ACC</span><span class="mini-bars__track"><i style="--w: 91%"></i></span><span>91</span></div>
+              <div class="mini-bars__row"><span>DEC</span><span class="mini-bars__track"><i style="--w: 55%"></i></span><span>55</span></div>
+            </div>
+          </article>
+
+          <article class="dash-card dash-card--span-full">
+            <header class="dash-card__top dash-card__top--spark">
+              <div class="dash-card__intro">
+                <h3 class="dash-card__title">Tendencia temporal</h3>
+                <p class="dash-card__subtitle">Índice NeoScore™ · ventana móvil 12J · actualizado hace 2 h</p>
+              </div>
+              <div class="spark-head" aria-label="Indicadores NeoScore">
+                <div class="spark-head__main">
+                  <span class="spark-head__label">NeoScore™ actual</span>
+                  <strong class="spark-head__score">87.4</strong>
+                  <span class="spark-head__badge spark-head__badge--up">+4.2 vs J8</span>
+                </div>
+                <dl class="spark-head__dl">
+                  <div class="spark-head__pair">
+                    <dt>J1</dt>
+                    <dd>79.1</dd>
+                  </div>
+                  <div class="spark-head__pair">
+                    <dt>J8</dt>
+                    <dd>83.2</dd>
+                  </div>
+                  <div class="spark-head__pair">
+                    <dt>J12</dt>
+                    <dd>87.4</dd>
+                  </div>
+                  <div class="spark-head__pair">
+                    <dt>Percentil</dt>
+                    <dd>P92</dd>
+                  </div>
+                </dl>
+              </div>
+            </header>
+            <div class="spark" role="presentation">
+              <svg viewBox="0 0 320 120" preserveAspectRatio="none" class="spark__svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(0,255,163,0.35)"/>
+                    <stop offset="100%" stop-color="rgba(0,255,163,0)"/>
+                  </linearGradient>
+                </defs>
+                <path class="spark__area" d="M0,100 L40,85 L80,95 L120,60 L160,70 L200,40 L240,55 L280,35 L320,50 L320,120 L0,120 Z" fill="url(#sparkFill)"/>
+                <path class="spark__line" d="M0,100 L40,85 L80,95 L120,60 L160,70 L200,40 L240,55 L280,35 L320,50" fill="none"/>
+              </svg>
+              <div class="spark__axis">
+                <span>J1 <em>79.1</em></span><span>J4 <em>81.0</em></span><span>J8 <em>83.2</em></span><span>J12 <em>87.4</em></span>
+              </div>
+            </div>
+            <ul class="spark-foot" aria-label="Detalle por bloques">
+              <li class="spark-foot__item"><span class="spark-foot__k">Racha</span><span class="spark-foot__v">6 partidos &gt;84</span></li>
+              <li class="spark-foot__item"><span class="spark-foot__k">Volatilidad</span><span class="spark-foot__v">σ 2.1 (baja)</span></li>
+              <li class="spark-foot__item"><span class="spark-foot__k">Proyección J16</span><span class="spark-foot__v">89.0 ±1.4</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto" aria-labelledby="contact-heading">
+      <div class="container container--narrow">
+        <header class="section__head section__head--center" data-reveal>
+          <h2 id="contact-heading" class="section__title">Solicita acceso</h2>
+          <p class="section__lead">Formulario visual sin validaciones todavía. Te responderemos con una demo guiada.</p>
+        </header>
+
+        <form class="form" action="#" method="get" data-reveal>
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Ej. Laura Méndez">
+            </div>
+            <div class="field">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="nombre@club.com">
+            </div>
+          </div>
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="+34 600 000 000">
+            </div>
+            <div class="field">
+              <label for="club">Club o equipo</label>
+              <input type="text" id="club" name="club" autocomplete="organization" placeholder="Ej. Neo United FC">
+            </div>
+          </div>
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary btn--block">Enviar solicitud</button>
+            <p class="form__note">Al enviar aceptas contacto comercial. Sin lógica de envío en esta versión.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="footer__logo-link" href="#top">
+          <span class="nav__logo nav__logo--sm" aria-hidden="true"></span>
+          <span>NeoScout AI</span>
+        </a>
+        <p class="footer__tagline">Scouting inteligente, visual y listo para el banquillo.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Enlaces del pie">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#jugadores">Jugadores</a></li>
+          <li><a href="#estadisticas">Estadísticas</a></li>
+          <li><a href="#analitica">Analítica</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <p class="footer__social-title">Redes</p>
+        <ul class="social">
+          <li><a href="#" aria-label="X (Twitter)">𝕏</a></li>
+          <li><a href="#" aria-label="LinkedIn">in</a></li>
+          <li><a href="#" aria-label="YouTube">▶</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> NeoScout AI. Todos los derechos reservados.</p>
+        <p class="footer__legal">Diseño visual — sin backend en esta fase.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      var panel = document.getElementById('nav-menu');
+      if (toggle && panel) {
+        toggle.addEventListener('click', function () {
+          var open = panel.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+        });
+        panel.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            panel.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Abrir menú');
+          });
+        });
+      }
+
+      var y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+
+      if ('IntersectionObserver' in window) {
+        var els = document.querySelectorAll('[data-reveal]');
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add('is-visible');
+              io.unobserve(e.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+        els.forEach(function (el) { io.observe(el); });
+      } else {
+        document.querySelectorAll('[data-reveal]').forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
