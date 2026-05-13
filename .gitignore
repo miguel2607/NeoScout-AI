@@ -5,3 +5,10 @@ Thumbs.db
 .vscode/
 *.swp
 *.tmp
+
+# Paquete local para compañera (no versionar)
+neoscout-part2-entrega/
+
+# JS / interactions: no versionar en miguel (p. ej. trabajo en rama compañera)
+js/
+css/interactions.css
