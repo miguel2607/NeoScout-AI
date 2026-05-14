@@ -2,6 +2,15 @@
 
 Landing estática que promociona **NeoScout AI**, una plataforma ficticia de scouting y análisis futbolístico con enfoque en datos e IA. Incluye presentación del producto, catálogo de jugadores (datos simulados) y formulario de solicitud de acceso.
 
+## Contenido del proyecto
+
+- `index.html` — Página principal de la landing.
+- `css/main.css` — Estilos del sitio, diseño responsivo y animaciones.
+- `css/interactions.css` — Estados de UI ligados al JS (catálogo, formulario, toasts).
+- `js/app.js` — Menú móvil, scroll reveal, carga del catálogo y validación del formulario.
+- `js/mockApi.js` — API simulada (jugadores y contacto).
+- `assets/` — Íconos y recursos gráficos.
+
 ## Cómo correrlo en local
 
 1. Clona o descarga el repositorio.
@@ -10,11 +19,24 @@ Landing estática que promociona **NeoScout AI**, una plataforma ficticia de sco
    - En **VS Code / Cursor**: extensión *Live Server* o *Live Preview*, abriendo `index.html`.
    - Con **Node.js**: `npx --yes serve .` en la raíz del proyecto y entra a la URL que indique la terminal (suele ser `http://localhost:3000`).
 
+## Cómo probarlo
+
+- Navega por la landing, el menú y las secciones.
+- En **Catálogo en vivo** los datos vienen de `mockApi.js` (puedes usar **Reintentar** si falla la carga simulada).
+- En **Solicita acceso**, completa el formulario y confirma el diálogo para ver el registro simulado.
+- Opcional: prellenar el formulario vía URL, por ejemplo:
+
+```text
+http://127.0.0.1:5500/index.html?nombre=SOFIA+GIRALDO+GONZALEZ&email=sgiraldo_34%40cue.edu.co&telefono=3014019508&club=real+madrid
+```
+
+*(Ajusta host y puerto a los de tu servidor local.)*
+
 ## Ramas (equipo)
 
 - **main**: base del repositorio.
-- **miguel**: landing estática.
-- **sofia**: parte desde la base para añadir JavaScript.
+- **miguel**: landing estática y JS de entrega.
+- **sofia**: trabajo en paralelo desde la base.
 
 ---
 
