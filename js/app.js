@@ -261,10 +261,10 @@ function validateForm() {
 
 function setSubmitLoading(isLoading, btn) {
   if (!btn) return;
-  const defaultText = btn.dataset.defaultText || 'Enviar solicitud';
+  const defaultText = btn.dataset.defaultText || 'Registrar solicitud de acceso';
   btn.disabled = isLoading;
   btn.classList.toggle('is-loading', isLoading);
-  btn.textContent = isLoading ? 'Enviando…' : defaultText;
+  btn.textContent = isLoading ? 'Registrando solicitud…' : defaultText;
 }
 
 function initForm() {
@@ -280,7 +280,7 @@ function initForm() {
     if (!data) return;
 
     const confirmed = window.confirm(
-      '¿Enviar esta solicitud a NeoScout AI?\n\nPodremos contactarte con la información indicada.'
+      '¿Registrar esta solicitud en NeoScout AI?\n\nPodremos contactarte con la información indicada.'
     );
     if (!confirmed) return;
 
@@ -292,7 +292,7 @@ function initForm() {
       showToast(`${res.message} (Ref: ${res.requestId})`, { error: false });
       form.reset();
     } catch (err) {
-      showToast(err?.message || 'No se pudo completar el envío.', { error: true });
+      showToast(err?.message || 'No se pudo completar el registro de tu solicitud.', { error: true });
     } finally {
       setSubmitLoading(false, btn);
     }

@@ -65,7 +65,7 @@ export function getPlayers() {
   const waitMs = Math.round(randomBetween(800, 1600));
   return delay(waitMs).then(() => {
     if (Math.random() < PLAYERS_ERROR_CHANCE) {
-      console.error('500 Internal Server Error');
+      console.log('500 Internal Server Error');
       const err = new Error('No se pudieron cargar los jugadores. Inténtalo de nuevo.');
       err.code = 500;
       return Promise.reject(err);
@@ -88,7 +88,7 @@ export function submitContactForm(data) {
   const waitMs = Math.round(randomBetween(1000, 1800));
   return delay(waitMs).then(() => {
     if (Math.random() < CONTACT_FAIL_CHANCE) {
-      console.error('500 Internal Server Error');
+      console.log('500 Internal Server Error');
       const err = new Error('El servidor no pudo registrar tu solicitud en este momento.');
       err.code = 500;
       return Promise.reject(err);
